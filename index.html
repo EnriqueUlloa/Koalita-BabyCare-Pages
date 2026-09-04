@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Koalita BabyCare</title>
+    <meta name="description" content="Política de privacidad y protección de datos para Koalita BabyCare. Información sobre almacenamiento offline, sincronización segura y cumplimiento COPPA / GDPR-K.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669;
+            --primary-light: #ecfdf5;
+            --primary-dark: #047857;
+            --accent: #10b981;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --border: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --radius-lg: 24px;
+            --radius-md: 16px;
+            --shadow: 0 10px 30px -5px rgba(5, 150, 105, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #12100e;
+                --surface: #1e1c19;
+                --border: #2e2a25;
+                --text-main: #f8fafc;
+                --text-muted: #cbd5e1;
+                --primary-light: #064e3b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 860px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 68px;
+            background: linear-gradient(135deg, #10b981, #047857);
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(5, 150, 105, 0.28);
+            font-size: 34px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .updated-date {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 4px;
+            margin-top: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+        }
+
+        .highlight-banner {
+            background: var(--surface);
+            border: 1.5px solid #10b981;
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .highlight-banner .emoji {
+            font-size: 2rem;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .trust-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .trust-card span.icon {
+            font-size: 1.3rem;
+        }
+
+        .section-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            margin-bottom: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        .section-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-card p, .section-card ul {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .section-card ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+        .section-card li {
+            margin-bottom: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact-box {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-box:hover {
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="logo-badge">🛡️</div>
+        <h1 id="mainTitle">Política de Privacidad</h1>
+        <p class="updated-date" id="updatedText">Koalita BabyCare &bull; Última actualización: Septiembre 2026</p>
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btnEs" onclick="setLang('es')">Español</button>
+            <button class="lang-btn" id="btnEn" onclick="setLang('en')">English</button>
+        </div>
+    </header>
+
+    <div class="highlight-banner">
+        <div class="emoji">👶</div>
+        <div id="bannerText">
+            <strong>Privacidad Pediátrica Garantizada:</strong> Diseñamos Koalita BabyCare bajo el principio de que los datos biométricos y médicos de tu bebé pertenecen exclusivamente a tu familia.
+        </div>
+    </div>
+
+    <div class="trust-grid">
+        <div class="trust-card">
+            <span class="icon">🔒</span>
+            <span id="t1">100% Offline-First</span>
+        </div>
+        <div class="trust-card">
+            <span class="icon">🛡️</span>
+            <span id="t2">Cumple con COPPA</span>
+        </div>
+        <div class="trust-card">
+            <span class="icon">☁️</span>
+            <span id="t3">Cifrado AES-256</span>
+        </div>
+        <div class="trust-card">
+            <span class="icon">🚫</span>
+            <span id="t4">Sin Venta de Datos</span>
+        </div>
+    </div>
+
+    <main id="contentContainer">
+        <!-- Generado dinámicamente según idioma -->
+    </main>
+
+    <footer class="footer">
+        <p id="footerText">&copy; 2026 Koalita BabyCare. Todos los derechos reservados.</p>
+        <a href="mailto:support.koalitababycare@gmail.com" class="contact-box" id="contactBtn">✉️ support.koalitababycare@gmail.com</a>
+    </footer>
+</div>
+
+<script>
+    const content = {
+        es: {
+            title: "Política de Privacidad",
+            updated: "Koalita BabyCare • Última actualización: Septiembre 2026",
+            banner: "<strong>Privacidad Pediátrica Garantizada:</strong> Diseñamos Koalita BabyCare bajo el principio de que los datos biométricos y médicos de tu bebé pertenecen exclusivamente a tu familia.",
+            t1: "100% Offline-First",
+            t2: "Cumple con COPPA",
+            t3: "Cifrado AES-256",
+            t4: "Sin Venta de Datos",
+            sections: [
+                {
+                    icon: "👶",
+                    title: "1. Información que Recopilamos",
+                    text: "Koalita BabyCare permite a los cuidadores registrar información esencial para el seguimiento pediátrico y nutricional del bebé:",
+                    list: [
+                        "<strong>Perfil del Bebé:</strong> Nombre, fecha de nacimiento, sexo biológico y medidas antropométricas (peso, talla y perímetro cefálico). <em>NO solicitamos, no capturamos ni guardamos fotos de bebés en ningún momento.</em>",
+                        "<strong>Registros de Cuidado Diario:</strong> Tomas de leche materna o fórmula, cambios de pañal, siestas, síntomas, vacunas aplicadas y medicamentos administrados.",
+                        "<strong>Cuidadores:</strong> Rol familiar (Mamá, Papá, Abuelo/a, Niñera) y correo electrónico en caso de optar por la sincronización familiar en la nube."
+                    ]
+                },
+                {
+                    icon: "📱",
+                    title: "2. Almacenamiento Local (Offline-First)",
+                    text: "La aplicación opera bajo un modelo prioritariamente local (Offline-First). Todos los registros se almacenan en una base de datos segura SQLite/Room en el propio dispositivo. La aplicación no requiere conexión a internet para funcionar plenamente. <strong>Nunca vendemos, alquilamos ni comercializamos la información de tu bebé con terceros ni agencias de publicidad.</strong>"
+                },
+                {
+                    icon: "☁️",
+                    title: "3. Sincronización Familiar en la Nube (Opcional)",
+                    text: "Si los padres deciden habilitar la sincronización entre cuidadores, la información se transmite y almacena en Google Cloud / Firebase Firestore mediante canales cifrados TLS en tránsito y cifrado estándar AES-256 en reposo. El acceso está estrictamente protegido y solo miembros con el Código de Familia único o código QR generado por el administrador pueden visualizar los datos."
+                },
+                {
+                    icon: "🛡️",
+                    title: "4. Protección Infantil (COPPA & GDPR-K)",
+                    text: "Koalita BabyCare está dirigida y comercializada estrictamente a padres de familia, tutores legales y cuidadores adultos. No recopilamos conscientemente información personal directamente de niños menores de 13 años. Toda la información es introducida voluntariamente por adultos a cargo del cuidado del menor."
+                },
+                {
+                    icon: "🔒",
+                    title: "5. Permisos del Dispositivo y Uso Justificado",
+                    text: "La app solicita permisos mínimos indispensables para su correcta operación:",
+                    list: [
+                        "<strong>Cámara (Solo Escáner QR de Familia):</strong> Utilizada estricta y exclusivamente en tiempo real para escanear el código QR de invitación familiar. Las imágenes se procesan en memoria para leer el código y jamás se guardan, graban ni suben a ningún servidor. La app nunca toma ni almacena fotos.",
+                        "<strong>Alarmas Exactas y Notificaciones:</strong> Necesarias para recordatorios puntuales de medicamentos, vacunas y consultas médicas.",
+                        "<strong>Almacenamiento / Documentos:</strong> Requerido únicamente para generar y exportar reportes clínicos de crecimiento en formato PDF."
+                    ]
+                },
+                {
+                    icon: "📢",
+                    title: "6. Publicidad No Intrusiva (Google AdMob para Familias)",
+                    text: "Koalita BabyCare cumple estrictamente con el Programa Diseñado para Familias de Google Play. Los anuncios mostrados a través de Google AdMob son contextuales, no personalizados y clasificados para todo público. No utilizamos cookies de seguimiento conductual ni recopilamos identificadores de publicidad dirigidos a menores."
+                },
+                {
+                    icon: "🗑️",
+                    title: "7. Control de Datos y Derecho al Olvido",
+                    text: "El usuario mantiene pleno control de sus registros en todo momento. Desde la sección de Ajustes, cualquier usuario puede editar, exportar o <strong>eliminar de forma permanente</strong> el perfil de su bebé, el historial de registros o la cuenta familiar completa. La eliminación es inmediata, irreversible y purga tanto los datos locales como los registros en la nube."
+                },
+                {
+                    icon: "✉️",
+                    title: "8. Contacto y Consultas",
+                    text: "Para cualquier pregunta, aclaración o solicitud relacionada con tus derechos de privacidad o el tratamiento de tus datos, puedes contactar a nuestro responsable de privacidad en: <strong>support.koalitababycare@gmail.com</strong>"
+                }
+            ],
+            footer: "© 2026 Koalita BabyCare. Todos los derechos reservados."
+        },
+        en: {
+            title: "Privacy Policy",
+            updated: "Koalita BabyCare • Last updated: September 2026",
+            banner: "<strong>Guaranteed Pediatric Privacy:</strong> We designed Koalita BabyCare under the foundational principle that your baby's biometric and health data belongs exclusively to your family.",
+            t1: "100% Offline-First",
+            t2: "COPPA Compliant",
+            t3: "AES-256 Encrypted",
+            t4: "Zero Data Selling",
+            sections: [
+                {
+                    icon: "👶",
+                    title: "1. Information We Collect",
+                    text: "Koalita BabyCare enables caregivers to record essential data for pediatric health and daily development:",
+                    list: [
+                        "<strong>Baby Profile:</strong> Name, date of birth, biological sex, and anthropometric metrics (weight, height, and head circumference). <em>We do NOT request, collect, or store photos of babies.</em>",
+                        "<strong>Daily Care Logs:</strong> Breastfeeding/bottle feedings, diaper change counts, sleep hours, symptoms, vaccines, and administered medications.",
+                        "<strong>Caregivers:</strong> Family role (Mom, Dad, Grandparent, Nanny) and authentication email if cloud synchronization is enabled."
+                    ]
+                },
+                {
+                    icon: "📱",
+                    title: "2. Offline-First & Local Storage",
+                    text: "The application is built upon an Offline-First model. All records primarily reside within a secured local SQLite/Room database on your device. The app operates completely without an internet connection. <strong>We never sell, rent, or commercialize your baby's information with any third parties, advertisers, or data brokers.</strong>"
+                },
+                {
+                    icon: "☁️",
+                    title: "3. Encrypted Family Cloud Sync (Optional)",
+                    text: "If caregivers choose to enable cross-device family synchronization, records are transferred and hosted on Google Cloud / Firebase Firestore using TLS encryption in transit and AES-256 encryption at rest. Access is strictly compartmentalized; only authorized members with your unique Family Code or QR code can view the records."
+                },
+                {
+                    icon: "🛡️",
+                    title: "4. Child Privacy Protection (COPPA & GDPR-K)",
+                    text: "Koalita BabyCare is strictly intended for and marketed to adult parents and legal guardians. The app does not knowingly collect personal information directly from children under 13 years of age. All data is conscientiously entered by adult caregivers.",
+                },
+                {
+                    icon: "🔒",
+                    title: "5. Device Permissions & Purpose",
+                    text: "The application requests only minimal, necessary system permissions:",
+                    list: [
+                        "<strong>Camera (Live QR Scanner Only):</strong> Strictly used in real-time to scan family invite QR codes. Camera frames are processed in-memory to decode the code and are never saved, recorded, or uploaded. The app never takes or stores photos.",
+                        "<strong>Exact Alarms & Notifications:</strong> Required for timely reminders for medications, vaccines, and doctor visits.",
+                        "<strong>Storage / Media:</strong> Utilized exclusively when exporting pediatric growth summary reports in PDF format."
+                    ]
+                },
+                {
+                    icon: "📢",
+                    title: "6. Family-Friendly Ads (Google AdMob)",
+                    text: "Koalita BabyCare strictly complies with Google Play's Families Policy. Advertisements served via Google AdMob are contextual, non-personalized, and rated for all audiences. We do not engage in behavioral tracking or collect advertising IDs from minors.",
+                },
+                {
+                    icon: "🗑️",
+                    title: "7. User Rights & Data Deletion",
+                    text: "You maintain total ownership of your records at all times. From the Settings screen, you can modify, export, or <strong>permanently delete</strong> baby profiles, daily logs, or your entire family account. Deletion is instantaneous and irrevocably purges both local and cloud copies.",
+                },
+                {
+                    icon: "✉️",
+                    title: "8. Contact Us",
+                    text: "If you have any questions, inquiries, or requests regarding this Privacy Policy or your data protection rights, please reach out to our privacy team at: <strong>support.koalitababycare@gmail.com</strong>"
+                }
+            ],
+            footer: "© 2026 Koalita BabyCare. All rights reserved."
+        }
+    };
+
+    function setLang(lang) {
+        document.getElementById('btnEs').classList.toggle('active', lang === 'es');
+        document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+
+        const d = content[lang];
+        document.getElementById('mainTitle').innerText = d.title;
+        document.getElementById('updatedText').innerText = d.updated;
+        document.getElementById('bannerText').innerHTML = d.banner;
+        document.getElementById('t1').innerText = d.t1;
+        document.getElementById('t2').innerText = d.t2;
+        document.getElementById('t3').innerText = d.t3;
+        document.getElementById('t4').innerText = d.t4;
+        document.getElementById('footerText').innerText = d.footer;
+
+        const container = document.getElementById('contentContainer');
+        container.innerHTML = '';
+
+        d.sections.forEach(s => {
+            const card = document.createElement('section');
+            card.className = 'section-card';
+            let html = `<h2>${s.icon} ${s.title}</h2><p>${s.text}</p>`;
+            if (s.list) {
+                html += '<ul>';
+                s.list.forEach(item => {
+                    html += `<li>${item}</li>`;
+                });
+                html += '</ul>';
+            }
+            card.innerHTML = html;
+            container.appendChild(card);
+        });
+    }
+
+    // Inicializar en español
+    setLang('es');
+</script>
+
+</body>
+</html>
