@@ -726,20 +726,65 @@
         }
     };
 
+    function getUrlSettings() {
+        const searchParams = new URLSearchParams(window.location.search);
+        const langParam = searchParams.get('lang');
+        const rawHash = window.location.hash.replace('#', '').toLowerCase();
+
+        // 1. Detect language
+        let lang = 'es';
+        if (langParam === 'en' || langParam === 'es') {
+            lang = langParam;
+        } else if (rawHash.includes('lang=en') || rawHash.endsWith('-en') || rawHash.endsWith('_en')) {
+            lang = 'en';
+        } else if (rawHash.includes('lang=es') || rawHash.endsWith('-es') || rawHash.endsWith('_es')) {
+            lang = 'es';
+        } else {
+            const saved = localStorage.getItem('koalita_lang');
+            if (saved === 'en' || saved === 'es') {
+                lang = saved;
+            } else if (navigator.language && navigator.language.toLowerCase().startsWith('en')) {
+                lang = 'en';
+            }
+        }
+
+        // 2. Detect tab
+        let cleanHash = rawHash.split('?')[0].replace(/[-_](en|es)$/, '');
+        let tab = 'privacy';
+        if (cleanHash === 'terms' || cleanHash === 'terminos') {
+            tab = 'terms';
+        } else if (cleanHash === 'deletion' || cleanHash === 'eliminacion' || cleanHash === 'delete') {
+            tab = 'deletion';
+        } else {
+            tab = 'privacy';
+        }
+
+        return { tab, lang };
+    }
+
     function switchTab(tabKey) {
         currentTab = tabKey;
-        window.location.hash = tabKey;
+        const url = new URL(window.location.href);
+        url.hash = '#' + tabKey;
+        window.history.replaceState({}, '', url.toString());
         render();
     }
 
     function setLang(lang) {
         currentLang = lang;
-        document.getElementById('btnEs').classList.toggle('active', lang === 'es');
-        document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+        try { localStorage.setItem('koalita_lang', lang); } catch (_) {}
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState({}, '', url.toString());
         render();
     }
 
     function render() {
+        // Actualizar estados de botones de idioma
+        document.getElementById('btnEs').classList.toggle('active', currentLang === 'es');
+        document.getElementById('btnEn').classList.toggle('active', currentLang === 'en');
+        document.documentElement.lang = currentLang;
+
         // Actualizar estados de botones de pestañas
         document.getElementById('tabPrivacy').classList.toggle('active', currentTab === 'privacy');
         document.getElementById('tabTerms').classList.toggle('active', currentTab === 'terms');
@@ -756,6 +801,11 @@
         document.getElementById('headerIcon').innerText = icon;
         document.getElementById('mainTitle').innerText = currentData.title;
         document.getElementById('updatedText').innerHTML = currentData.updated;
+
+        // Footer
+        document.getElementById('footerText').innerHTML = currentLang === 'en'
+            ? '&copy; 2026 Onze Solutions &bull; Koalita BabyCare. All rights reserved.'
+            : '&copy; 2026 Onze Solutions &bull; Koalita BabyCare. Todos los derechos reservados.';
 
         // Banner
         const bannerBox = document.getElementById('bannerBox');
@@ -791,24 +841,17 @@
         });
     }
 
-    // Detectar hash en URL (#terms, #deletion, #privacy)
     function init() {
-        const hash = window.location.hash.replace('#', '').toLowerCase();
-        if (hash === 'terms' || hash === 'terminos') {
-            currentTab = 'terms';
-        } else if (hash === 'deletion' || hash === 'eliminacion' || hash === 'delete') {
-            currentTab = 'deletion';
-        } else {
-            currentTab = 'privacy';
-        }
+        const settings = getUrlSettings();
+        currentTab = settings.tab;
+        currentLang = settings.lang;
         render();
     }
 
     window.addEventListener('hashchange', () => {
-        const hash = window.location.hash.replace('#', '').toLowerCase();
-        if (hash === 'terms') currentTab = 'terms';
-        else if (hash === 'deletion') currentTab = 'deletion';
-        else if (hash === 'privacy') currentTab = 'privacy';
+        const settings = getUrlSettings();
+        currentTab = settings.tab;
+        currentLang = settings.lang;
         render();
     });
 
