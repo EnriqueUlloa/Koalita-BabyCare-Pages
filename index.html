@@ -313,7 +313,7 @@
     <header class="header">
         <div class="logo-badge" id="headerIcon">🛡️</div>
         <h1 id="mainTitle">Política de Privacidad</h1>
-        <p class="updated-date" id="updatedText">Koalita BabyCare by Onze Solutions &bull; Última actualización: Septiembre 2026</p>
+        <p class="updated-date" id="updatedText">Koalita BabyCare by Onze Solutions &bull; Última actualización: 24 de septiembre de 2026</p>
     </header>
 
     <div class="notice-banner info" id="bannerBox">
@@ -344,14 +344,14 @@
             es: {
                 tabName: "Política de Privacidad",
                 title: "Política de Privacidad",
-                updated: "Koalita BabyCare by Onze Solutions • Última actualización: Septiembre 2026",
+                updated: "Koalita BabyCare by Onze Solutions • Última actualización: 24 de septiembre de 2026",
                 bannerType: "info",
                 banner: "<strong>Privacidad Pediátrica Garantizada:</strong> Diseñamos Koalita BabyCare bajo el principio de que los datos biométricos y médicos de tu bebé pertenecen exclusivamente a tu familia. Cumplimos con las normativas COPPA y GDPR-K.",
                 highlights: [
                     { icon: "🔒", title: "100% Offline-First", desc: "Tus registros se guardan primariamente en tu dispositivo local" },
                     { icon: "🛡️", title: "Cumple con COPPA", desc: "Diseñado para padres y tutores legales adultos (18+)" },
                     { icon: "☁️", title: "Cifrado AES-256", desc: "Transmisión y almacenamiento seguro en Google Firebase" },
-                    { icon: "🚫", title: "Sin Venta de Datos", desc: "Jamás vendemos ni compartimos datos con terceros" }
+                    { icon: "🚫", title: "Sin Venta de Datos", desc: "Jamás vendemos tus datos; sin anuncios ni rastreo publicitario" }
                 ],
                 sections: [
                     {
@@ -360,7 +360,7 @@
                         text: "Koalita BabyCare permite a los cuidadores registrar información esencial para el seguimiento pediátrico y nutricional del bebé:",
                         list: [
                             "<strong>Perfil del Bebé:</strong> Nombre, fecha de nacimiento, sexo biológico y medidas antropométricas (peso, talla y perímetro cefálico). <em>NO solicitamos, no capturamos ni guardamos fotos de bebés en ningún momento.</em>",
-                            "<strong>Registros de Cuidado Diario:</strong> Tomas de leche materna o fórmula, cambios de pañal, siestas, síntomas, vacunas aplicadas y medicamentos administrados.",
+                            "<strong>Registros de Cuidado Diario:</strong> Tomas de leche materna o fórmula (incluida la duración de cada lado), extracción de leche, cambios de pañal (incluidos el color y la consistencia de las deposiciones), siestas, tiempo boca abajo, temperatura corporal, síntomas, vacunas aplicadas y medicamentos administrados.",
                             "<strong>Cuidadores:</strong> Rol familiar (Mamá, Papá, Abuelo/a, Niñera) y correo electrónico en caso de optar por la sincronización familiar en la nube."
                         ]
                     },
@@ -390,14 +390,20 @@
                         ]
                     },
                     {
-                        icon: "📢",
-                        title: "6. Publicidad No Intrusiva (Google AdMob para Familias)",
-                        text: "Koalita BabyCare cumple estrictamente con el Programa Diseñado para Familias de Google Play. Los anuncios mostrados a través de Google AdMob son contextuales, no personalizados y clasificados bajo el estándar MAX_AD_CONTENT_RATING_G (apto para todo público). No utilizamos seguimiento conductual ni identificadores de publicidad dirigidos a menores."
+                        icon: "🤝",
+                        title: "6. Sin Publicidad, Suscripciones y Proveedores de Servicio",
+                        text: "Koalita BabyCare no muestra anuncios: no integra redes publicitarias ni recopila el identificador de publicidad del dispositivo. Para operar la app usamos únicamente los siguientes proveedores, que tratan los datos en nuestro nombre y nunca reciben información del bebé con fines comerciales:",
+                        list: [
+                            "<strong>Google Play (pagos):</strong> Procesa las suscripciones Premium. Nosotros nunca vemos ni guardamos los datos de tu tarjeta o método de pago.",
+                            "<strong>RevenueCat (estado de la suscripción):</strong> Verifica si tu familia tiene Premium activo. Recibe el identificador interno de tu cuenta y el historial de compras (producto, fechas y estado); no recibe datos del bebé ni del registro de cuidados.",
+                            "<strong>Google Firebase:</strong> Inicio de sesión (Auth), base de datos de la sincronización familiar (Firestore), verificación del plan en el servidor (Cloud Functions), notificaciones push entre cuidadores (Cloud Messaging, mediante un token del dispositivo) e informes técnicos de fallos (Crashlytics), que no incluyen los registros del bebé.",
+                            "<strong>Prueba gratuita de 14 días:</strong> Para que la prueba de Premium se otorgue una sola vez por persona, guardamos un registro con el identificador interno de la cuenta, el código de familia y las fechas de la prueba, y una huella criptográfica (hash SHA-256) de tu correo de Google con la fecha en que se otorgó. Si eliminas tu cuenta, el primer registro se borra y solo se conserva la huella: nunca el correo en sí ni ningún otro dato."
+                        ]
                     },
                     {
                         icon: "🗑️",
                         title: "7. Control de Datos y Derecho al Olvido",
-                        text: "El usuario mantiene pleno control de sus registros en todo momento. Desde la sección de Ajustes, cualquier usuario puede editar, exportar o <strong>eliminar de forma permanente</strong> el perfil de su bebé, el historial de registros o la cuenta familiar completa. Para conocer el procedimiento detallado web o solicitar la eliminación sin tener la app instalada, visita la pestaña 'Eliminación de Cuenta'."
+                        text: "El usuario mantiene pleno control de sus registros en todo momento. Desde la sección de Ajustes, cualquier usuario puede editar, exportar o <strong>eliminar de forma permanente</strong> el perfil de su bebé, el historial de registros o la cuenta familiar completa. Al eliminar tu cuenta solo se conservan los registros de compra que Google Play mantiene conforme a sus propias políticas y la huella de la prueba gratuita descrita en la sección 6. Para conocer el procedimiento detallado web o solicitar la eliminación sin tener la app instalada, visita la pestaña 'Eliminación de Cuenta'."
                     },
                     {
                         icon: "✉️",
@@ -409,14 +415,14 @@
             en: {
                 tabName: "Privacy Policy",
                 title: "Privacy Policy",
-                updated: "Koalita BabyCare by Onze Solutions • Last updated: September 2026",
+                updated: "Koalita BabyCare by Onze Solutions • Last updated: September 24, 2026",
                 bannerType: "info",
                 banner: "<strong>Guaranteed Pediatric Privacy:</strong> We designed Koalita BabyCare under the foundational principle that your baby's biometric and health data belongs exclusively to your family. Compliant with COPPA and GDPR-K.",
                 highlights: [
                     { icon: "🔒", title: "100% Offline-First", desc: "Your records are primarily stored locally on your device" },
                     { icon: "🛡️", title: "COPPA Compliant", desc: "Designed strictly for adult parents and legal guardians (18+)" },
                     { icon: "☁️", title: "AES-256 Encrypted", desc: "Secure cloud transmission & storage via Google Firebase" },
-                    { icon: "🚫", title: "Zero Data Selling", desc: "We never sell, rent, or monetize personal baby data" }
+                    { icon: "🚫", title: "Zero Data Selling", desc: "We never sell your data; no ads or ad tracking" }
                 ],
                 sections: [
                     {
@@ -425,7 +431,7 @@
                         text: "Koalita BabyCare enables caregivers to record essential data for pediatric health and daily development:",
                         list: [
                             "<strong>Baby Profile:</strong> Name, date of birth, biological sex, and anthropometric metrics (weight, height, and head circumference). <em>We do NOT request, collect, or store photos of babies.</em>",
-                            "<strong>Daily Care Logs:</strong> Breastfeeding/bottle feedings, diaper changes, sleep hours, symptoms, vaccines, and administered medications.",
+                            "<strong>Daily Care Logs:</strong> Breastfeeding (including time on each side) and bottle feedings, milk pumping, diaper changes (including stool color and consistency), sleep hours, tummy time, body temperature, symptoms, vaccines, and administered medications.",
                             "<strong>Caregivers:</strong> Family role (Mom, Dad, Grandparent, Nanny) and authentication email if cloud synchronization is enabled."
                         ]
                     },
@@ -455,14 +461,20 @@
                         ]
                     },
                     {
-                        icon: "📢",
-                        title: "6. Family-Friendly Ads (Google AdMob)",
-                        text: "Koalita BabyCare strictly complies with Google Play's Families Policy. Advertisements served via Google AdMob are contextual, non-personalized, and rated MAX_AD_CONTENT_RATING_G (safe for all audiences). We do not engage in behavioral tracking or collect advertising IDs from minors.",
+                        icon: "🤝",
+                        title: "6. No Ads, Subscriptions & Service Providers",
+                        text: "Koalita BabyCare shows no ads: it does not integrate advertising networks or collect the device advertising ID. To run the app we only use the following providers, which process data on our behalf and never receive baby information for commercial purposes:",
+                        list: [
+                            "<strong>Google Play (payments):</strong> Processes Premium subscriptions. We never see or store your card or payment method details.",
+                            "<strong>RevenueCat (subscription status):</strong> Verifies whether your family has an active Premium plan. It receives your internal account identifier and purchase history (product, dates and status); it does not receive baby data or care logs.",
+                            "<strong>Google Firebase:</strong> Sign-in (Auth), family sync database (Firestore), server-side plan verification (Cloud Functions), push notifications between caregivers (Cloud Messaging, using a device token) and technical crash reports (Crashlytics), which do not include baby records.",
+                            "<strong>14-day free trial:</strong> So the Premium trial is granted only once per person, we store a record with the internal account identifier, the family code and the trial dates, plus a cryptographic fingerprint (SHA-256 hash) of your Google email with the date the trial was granted. If you delete your account, the first record is deleted and only the fingerprint is kept: never the email itself or any other data."
+                        ]
                     },
                     {
                         icon: "🗑️",
                         title: "7. User Rights & Data Deletion",
-                        text: "You maintain total ownership of your records at all times. From the Settings screen, you can modify, export, or <strong>permanently delete</strong> baby profiles, daily logs, or your entire family account. For direct web deletion requests, please see the 'Account Deletion' tab."
+                        text: "You maintain total ownership of your records at all times. From the Settings screen, you can modify, export, or <strong>permanently delete</strong> baby profiles, daily logs, or your entire family account. When you delete your account, the only records kept are the purchase records Google Play retains under its own policies and the free-trial fingerprint described in section 6. For direct web deletion requests, please see the 'Account Deletion' tab."
                     },
                     {
                         icon: "✉️",
@@ -477,13 +489,13 @@
             es: {
                 tabName: "Términos y Condiciones",
                 title: "Términos y Condiciones de Uso",
-                updated: "Koalita BabyCare by Onze Solutions • Última actualización: Septiembre 2026",
+                updated: "Koalita BabyCare by Onze Solutions • Última actualización: 24 de septiembre de 2026",
                 bannerType: "warning",
                 banner: "<strong>⚠️ Exención de Responsabilidad Médica:</strong> Koalita BabyCare es una herramienta de organización familiar para el registro de hábitos y lactancia. <strong>No es un dispositivo médico, no proporciona diagnósticos clínicos ni sustituye la atención, consejo o tratamiento de un pediatra o médico calificado.</strong> En caso de emergencia médica, contacta de inmediato a los servicios de urgencias locales.",
                 highlights: [
                     { icon: "🏢", title: "Onze Solutions", desc: "Desarrollado y respaldado legalmente por Onze Solutions" },
                     { icon: "👨‍⚕️", title: "Uso Informativo", desc: "Herramienta de apoyo orientativo, no diagnóstica" },
-                    { icon: "💳", title: "Google Play Store", desc: "Suscripciones y compras gestionadas bajo las normas de Google Play" },
+                    { icon: "💳", title: "Gratis + Premium", desc: "Uso gratuito y suscripción Premium opcional vía Google Play" },
                     { icon: "⚖️", title: "Propiedad Intelectual", desc: "Todos los derechos reservados sobre marca, código y diseño" }
                 ],
                 sections: [
@@ -513,12 +525,17 @@
                     },
                     {
                         icon: "👑",
-                        title: "4. Funciones Premium y Compras en la Aplicación",
-                        text: "Koalita BabyCare ofrece una versión gratuita y opciones de suscripción o pago único Premium (Koalita BabyCare Premium).",
+                        title: "4. Plan Gratis, Prueba Premium y Suscripciones",
+                        text: "Koalita BabyCare se puede usar gratis. Koalita BabyCare Premium es una suscripción opcional que se contrata por familia.",
                         list: [
-                            "<strong>Procesamiento de Pagos:</strong> Todas las compras y suscripciones se gestionan y facturan a través de Google Play Store según sus propios Términos de Servicio.",
-                            "<strong>Beneficios Premium:</strong> El acceso Premium desbloquea funciones avanzadas como la eliminación completa de anuncios, el registro de múltiples bebés y miembros de familia ilimitados.",
-                            "<strong>Cancelaciones:</strong> Las suscripciones se pueden administrar o cancelar en cualquier momento directamente desde la configuración de tu cuenta de Google Play Store."
+                            "<strong>Plan Gratis:</strong> Incluye el registro diario (tomas, pañales, sueño, medicamentos, extracción, temperatura y tiempo boca abajo), el historial, las estadísticas, la predicción de siestas, las curvas de crecimiento OMS, la exportación a CSV y el widget, para 1 bebé y hasta 2 cuidadores.",
+                            "<strong>Premium:</strong> Desbloquea la agenda de salud con recordatorios de citas, vacunas y dosis, el reporte PDF para el pediatra, varios bebés y cuidadores ilimitados. Una sola suscripción, contratada por el administrador de la familia, cubre a todos sus cuidadores y bebés.",
+                            "<strong>Prueba de 14 días:</strong> Cada familia nueva recibe 14 días de Premium sin costo y sin registrar un método de pago, una sola vez por persona (según el correo de tu cuenta de Google), aunque elimines tu cuenta y vuelvas a registrarte. Al terminar, la familia pasa automáticamente al plan Gratis, sin ningún cargo.",
+                            "<strong>Ofertas de Google Play:</strong> Algunas suscripciones pueden incluir un periodo gratuito inicial para quienes nunca se han suscrito. Google Play muestra su duración y la fecha del primer cobro antes de confirmar; si cancelas antes de que termine, no se realiza ningún cobro.",
+                            "<strong>Pago y renovación:</strong> Hay planes mensual y anual. Google Play cobra a tu cuenta al confirmar la compra o, si la oferta incluye un periodo gratuito, al terminar ese periodo. La suscripción se renueva automáticamente salvo que la canceles al menos 24 horas antes de que termine el periodo en curso. Los precios varían por país y siempre se muestran antes de confirmar.",
+                            "<strong>Cancelación y reembolsos:</strong> Puedes cancelar en cualquier momento desde Google Play › Pagos y suscripciones. El acceso Premium sigue activo hasta el final del periodo pagado. Los reembolsos se rigen por las políticas de Google Play. Eliminar tu cuenta de Koalita BabyCare <strong>no cancela</strong> la suscripción: cancélala antes en Google Play.",
+                            "<strong>Al terminar Premium:</strong> No se borra ningún dato. La familia vuelve al plan Gratis: la agenda y el reporte PDF dejan de estar disponibles y los bebés adicionales quedan en solo lectura (se puede consultar su historial, pero no registrar nuevos cuidados) hasta reactivar Premium.",
+                            "<strong>Cambios:</strong> Podemos modificar las funciones incluidas en cada plan o sus precios. Los cambios de precio de una suscripción activa se notifican a través de Google Play conforme a sus políticas."
                         ]
                     },
                     {
@@ -546,13 +563,13 @@
             en: {
                 tabName: "Terms & Conditions",
                 title: "Terms & Conditions of Service",
-                updated: "Koalita BabyCare by Onze Solutions • Last updated: September 2026",
+                updated: "Koalita BabyCare by Onze Solutions • Last updated: September 24, 2026",
                 bannerType: "warning",
                 banner: "<strong>⚠️ Medical Disclaimer:</strong> Koalita BabyCare is an informational family organization tool for logging daily habits and growth. <strong>It is not a medical device and does not provide clinical diagnoses or replace professional pediatric care, advice, or treatment.</strong> In the event of a medical emergency, immediately contact local emergency services.",
                 highlights: [
                     { icon: "🏢", title: "Onze Solutions", desc: "Developed and legally backed by Onze Solutions" },
                     { icon: "👨‍⚕️", title: "Informational Only", desc: "Care support tool, non-diagnostic" },
-                    { icon: "💳", title: "Google Play Store", desc: "Subscriptions handled directly via Google Play Billing" },
+                    { icon: "💳", title: "Free + Premium", desc: "Free to use, optional Premium subscription via Google Play" },
                     { icon: "⚖️", title: "Intellectual Property", desc: "All rights reserved over code, brand, and assets" }
                 ],
                 sections: [
@@ -582,12 +599,17 @@
                     },
                     {
                         icon: "👑",
-                        title: "4. Premium Features & In-App Purchases",
-                        text: "Koalita BabyCare offers a free version as well as optional Premium upgrades (Koalita BabyCare Premium).",
+                        title: "4. Free Plan, Premium Trial & Subscriptions",
+                        text: "Koalita BabyCare can be used for free. Koalita BabyCare Premium is an optional subscription purchased per family.",
                         list: [
-                            "<strong>Payment Processing:</strong> All purchases and subscriptions are processed and billed through the Google Play Store pursuant to its Terms of Service.",
-                            "<strong>Premium Benefits:</strong> Premium access unlocks features such as complete ad removal, multiple baby profiles, and unlimited family members.",
-                            "<strong>Cancellations:</strong> Subscriptions can be managed or canceled at any time directly through your Google Play Store account settings."
+                            "<strong>Free Plan:</strong> Includes daily tracking (feedings, diapers, sleep, medications, pumping, temperature and tummy time), history, statistics, nap prediction, WHO growth charts, CSV export and the home-screen widget, for 1 baby and up to 2 caregivers.",
+                            "<strong>Premium:</strong> Unlocks the health agenda with appointment, vaccine and dose reminders, the PDF pediatrician report, multiple babies and unlimited caregivers. One subscription, purchased by the family administrator, covers all of the family's caregivers and babies.",
+                            "<strong>14-Day Trial:</strong> Every new family gets 14 days of Premium at no cost and without a payment method, once per person (based on your Google account email), even if you delete your account and sign up again. When it ends, the family moves to the Free plan automatically, with no charge.",
+                            "<strong>Google Play Offers:</strong> Some subscriptions may include an initial free period for people who have never subscribed. Google Play shows its length and the date of the first charge before you confirm; if you cancel before it ends, you are not charged.",
+                            "<strong>Payment & Renewal:</strong> Monthly and annual plans are available. Google Play charges your account when you confirm the purchase or, if the offer includes a free period, when that period ends. The subscription renews automatically unless you cancel at least 24 hours before the current period ends. Prices vary by country and are always shown before you confirm.",
+                            "<strong>Cancellation & Refunds:</strong> You can cancel at any time in Google Play › Payments & subscriptions. Premium access remains active until the end of the paid period. Refunds are governed by Google Play policies. Deleting your Koalita BabyCare account <strong>does not cancel</strong> the subscription: cancel it in Google Play first.",
+                            "<strong>When Premium Ends:</strong> No data is deleted. The family returns to the Free plan: the agenda and PDF report become unavailable and additional babies become read-only (their history can be viewed, but new care cannot be logged) until Premium is reactivated.",
+                            "<strong>Changes:</strong> We may change the features included in each plan or their prices. Price changes to an active subscription are notified through Google Play in accordance with its policies."
                         ]
                     },
                     {
@@ -622,8 +644,8 @@
                 bannerType: "info",
                 banner: "<strong>Compromiso de Privacidad y Derecho al Olvido:</strong> En cumplimiento estricto con las políticas de Google Play Store, cualquier usuario de Koalita BabyCare tiene derecho a solicitar la eliminación permanente e irreversible de su cuenta y de todos los datos asociados en cualquier momento, tanto desde la aplicación como desde este portal web.",
                 highlights: [
-                    { icon: "⚡", title: "Borrado Inmediato", desc: "La eliminación purga tanto la base local SQLite como Firestore" },
-                    { icon: "🛡️", title: "Sin Conservación", desc: "No retenemos respaldos ni copias tras la confirmación" },
+                    { icon: "⚡", title: "Borrado Inmediato", desc: "Borra tu cuenta de Firebase Auth, tus datos en Firestore y los del dispositivo" },
+                    { icon: "🛡️", title: "Sin Respaldos", desc: "Solo se conserva la huella (hash) de la prueba gratuita" },
                     { icon: "📱", title: "Opción In-App", desc: "Disponible desde Ajustes > Zona de Peligro > Eliminar Cuenta" },
                     { icon: "✉️", title: "Solicitud Web", desc: "Vía correo a support.koalitababycare@gmail.com sin reinstalar" }
                 ],
@@ -637,7 +659,8 @@
                             "Toca el icono de <strong>Ajustes ⚙️</strong> en la esquina superior.",
                             "Desplázate hasta la sección final: <strong>'Zona de Peligro / Cuenta'</strong>.",
                             "Selecciona <strong>'Eliminar Cuenta y Todos los Datos'</strong>.",
-                            "Confirma la acción en el diálogo de seguridad. Tu sesión se cerrará de inmediato y todos tus datos serán purgados de forma irreversible."
+                            "Confirma la acción en el diálogo de seguridad. Se eliminan tu cuenta y tus datos (ver el punto 3) y tu sesión se cierra.",
+                            "Si tienes una suscripción Premium activa, cancélala antes en <strong>Google Play › Pagos y suscripciones</strong>: eliminar la cuenta no la cancela."
                         ]
                     },
                     {
@@ -656,16 +679,24 @@
                         title: "3. ¿Qué datos se eliminan permanentemente?",
                         text: "Al ejecutar la eliminación, se borra de manera definitiva e irrecuperable lo siguiente:",
                         list: [
-                            "<strong>Perfil del bebé:</strong> Nombre, fecha de nacimiento, sexo y medidas antropométricas registradas.",
-                            "<strong>Historial completo de cuidados:</strong> Todas las tomas de leche, pañales, siestas, síntomas, vacunas aplicadas y medicamentos registrados.",
-                            "<strong>Informes médicos:</strong> Registros clínicos generados y percentiles asociados.",
-                            "<strong>Identificadores de usuario:</strong> Tu registro de autenticación en Firebase Auth y la asociación a la familia en Firestore."
+                            "<strong>Tu cuenta:</strong> Tu usuario de Firebase Auth (correo, nombre e identificador de Google con los que iniciaste sesión).",
+                            "<strong>Tu perfil y membresías:</strong> Tu perfil de usuario en Firestore, tu registro como cuidador en cada familia a la que perteneces y tus solicitudes de ingreso pendientes.",
+                            "<strong>Familias que se eliminan:</strong> Si eres el único cuidador de una familia, o eres su administrador y eliges eliminarla, se borra la familia completa: perfiles de los bebés (nombre, fecha de nacimiento, sexo y medidas), todo el historial de cuidados (tomas, pañales, siestas, síntomas, vacunas y medicamentos), la agenda y los registros de crecimiento.",
+                            "<strong>Familias que continúan:</strong> Si otros cuidadores siguen en la familia, los bebés y su historial se conservan para ellos, porque son datos compartidos de la familia; los registros que hiciste pueden seguir mostrando tu nombre de cuidador. Si eras administrador, el rol pasa a otro cuidador.",
+                            "<strong>Suscripción:</strong> Tu registro de cliente en RevenueCat (identificador de cuenta e historial de compras).",
+                            "<strong>Notificaciones:</strong> Los tokens push registrados para tu cuenta.",
+                            "<strong>Datos en el dispositivo:</strong> La base de datos local y las preferencias de la app en el teléfono desde el que eliminas la cuenta."
                         ]
                     },
                     {
                         icon: "⏱️",
                         title: "4. Período de Retención",
-                        text: "Onze Solutions <strong>no retiene ningún dato personal ni biométrico</strong> tras la confirmación de la eliminación. La información se destruye de las bases de datos activas inmediatamente."
+                        text: "Onze Solutions <strong>no retiene ningún dato del bebé ni biométrico</strong> de las familias eliminadas: se borran de las bases de datos activas de inmediato. Tras eliminar tu cuenta solo se conserva lo siguiente:",
+                        list: [
+                            "<strong>Huella de la prueba gratuita:</strong> Un hash SHA-256 de tu correo de Google y la fecha en que se otorgó la prueba de 14 días, para no volver a otorgarla si creas otra cuenta con el mismo correo. No guardamos el correo en sí ni lo asociamos a ningún otro dato.",
+                            "<strong>Registros de Google Play:</strong> Google conserva sus propios registros de pedidos según sus políticas y obligaciones fiscales; Onze Solutions no los controla.",
+                            "<strong>Informes de fallos:</strong> Los informes técnicos de Crashlytics no incluyen tu identidad ni datos del bebé y se eliminan automáticamente a los 90 días."
+                        ]
                     }
                 ]
             },
@@ -676,8 +707,8 @@
                 bannerType: "info",
                 banner: "<strong>Privacy Commitment & Right to Erasure:</strong> In strict compliance with Google Play Developer Policies, all Koalita BabyCare users are entitled to request the permanent, irreversible deletion of their account and all associated records at any time, both in-app and through this web portal.",
                 highlights: [
-                    { icon: "⚡", title: "Immediate Purge", desc: "Deletes data from both local SQLite storage and Firestore" },
-                    { icon: "🛡️", title: "Zero Retention", desc: "No residual backups are retained following confirmed deletion" },
+                    { icon: "⚡", title: "Immediate Purge", desc: "Deletes your Firebase Auth account, your Firestore data and the data on the device" },
+                    { icon: "🛡️", title: "No Backups", desc: "Only a hashed free-trial record is kept" },
                     { icon: "📱", title: "In-App Path", desc: "Available under Settings > Danger Zone > Delete Account" },
                     { icon: "✉️", title: "Web Request", desc: "Email support.koalitababycare@gmail.com without app reinstall" }
                 ],
@@ -691,7 +722,8 @@
                             "Tap the <strong>Settings ⚙️</strong> icon in the top bar.",
                             "Scroll to the bottom section: <strong>'Danger Zone / Account'</strong>.",
                             "Select <strong>'Delete Account & All Data'</strong>.",
-                            "Confirm in the prompt. You will be logged out immediately and all local & cloud data will be permanently wiped."
+                            "Confirm in the prompt. Your account and data are deleted (see section 3) and you are signed out.",
+                            "If you have an active Premium subscription, cancel it first in <strong>Google Play › Payments & subscriptions</strong>: deleting the account does not cancel it."
                         ]
                     },
                     {
@@ -710,16 +742,24 @@
                         title: "3. What Data Is Permanently Deleted?",
                         text: "Executing account deletion permanently and irreversibly wipes:",
                         list: [
-                            "<strong>Baby Profiles:</strong> Name, birth date, gender, and anthropometric records.",
-                            "<strong>Care logs:</strong> All feeding, diaper, nap, symptom, vaccine, and medication logs.",
-                            "<strong>Clinical summaries:</strong> Generated growth summaries and percentiles.",
-                            "<strong>User identity:</strong> Your Firebase Auth authentication record and Firestore family membership."
+                            "<strong>Your account:</strong> Your Firebase Auth user (the Google email, name and identifier you signed in with).",
+                            "<strong>Your profile and memberships:</strong> Your Firestore user profile, your caregiver record in every family you belong to, and your pending join requests.",
+                            "<strong>Families that are deleted:</strong> If you are a family's only caregiver, or its administrator and you choose to delete it, the whole family is deleted: baby profiles (name, birth date, sex and measurements), the full care history (feedings, diapers, naps, symptoms, vaccines and medications), the agenda and growth records.",
+                            "<strong>Families that continue:</strong> If other caregivers remain in the family, the babies and their history are kept for them, because they are shared family data; entries you logged may still show your caregiver name. If you were the administrator, the role passes to another caregiver.",
+                            "<strong>Subscription:</strong> Your RevenueCat customer record (account identifier and purchase history).",
+                            "<strong>Notifications:</strong> The push tokens registered for your account.",
+                            "<strong>On-device data:</strong> The app's local database and preferences on the phone you delete the account from."
                         ]
                     },
                     {
                         icon: "⏱️",
                         title: "4. Data Retention Policy",
-                        text: "Onze Solutions <strong>retains zero personal or biometric data</strong> after deletion. Data is immediately and irrevocably purged from all active database clusters."
+                        text: "Onze Solutions <strong>retains no baby or biometric data</strong> from deleted families: it is immediately purged from all active databases. After your account is deleted, only the following is kept:",
+                        list: [
+                            "<strong>Free-trial fingerprint:</strong> A SHA-256 hash of your Google email and the date the 14-day trial was granted, so it is not granted again if you create another account with the same email. We do not store the email itself or link it to any other data.",
+                            "<strong>Google Play records:</strong> Google keeps its own order records under its policies and tax obligations; Onze Solutions does not control them.",
+                            "<strong>Crash reports:</strong> Crashlytics technical reports do not include your identity or baby data and are deleted automatically after 90 days."
+                        ]
                     }
                 ]
             }
